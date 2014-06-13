@@ -1,0 +1,48 @@
+.container-fluid{
+    height:100%;
+    display:table;
+    width: 100%;
+    padding: 0;
+}
+
+.control-height{
+    height: 45px;
+}
+.row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
+
+.centering {
+    float:none;
+    height: 200px;
+    margin:0 auto;
+    border-radius: 5px;
+}
+.btn-success {
+    color: #fff;
+    background-color: #3e8f3e;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    height: 55px;
+}
+
+.btn-success1 {
+    color: #fff;
+    background-color: #3e8f3e;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    height: 60px !important;
+}
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-inner-spin-button{
+    display: none;
+}
+div#control {
+    display:inline-block;
+}
+
+div#control.left {
+    width:25%;
+}
+
+div#control.right {
+    width:74%;
+}

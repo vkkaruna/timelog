@@ -1,0 +1,91 @@
+<form name="formLogTime" id="formLogTime" ng-submit="LogTime()">
+
+    <div class="container" ng-init="GetProjects()">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="centering">
+                    <div class="col-md-5 col-md-offset-3">
+                        <fieldset>
+                            <h1 class="sign-up-title text-center">Developer's Time Log</h1>
+                            <br>
+                            <br>
+                            <div>
+                                <div id='control' class='left'>
+
+                                    <label class="control-label" for="project">Project</label>
+                                </div>
+                                <div id='control' class='right'>
+
+                                    <select class="form-control control-height" placeholder="Select Project"
+                                            ng-change="GetTasks()" required id="project"
+                                            ng-model="selectedProject" ng-options="project.ProjectName for project in Projects">
+                                        <option default>Select Project</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                            <div>
+                                <div id='control' class='left'>
+
+                                    <label class="control-label" for="task">Task</label>
+                                </div>
+                                <div id='control' class='right'>
+
+                                    <select class="form-control control-height" required id="task"
+                                            ng-model="selectedTask" ng-options="task.TaskName for task in Tasks">
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                            <div>
+                                <div id='control' class='left'>
+
+                                    <label class="control-label" for="dtActualStart">Start date</label>
+                                </div>
+                                <div id='control' class='right'>
+
+                                    <input type="date" class="form-control  control-height" placeholder="Enter start date"
+                                           id="dtActualStart" datepicker-popup="{{format}}" ng-model="dtActualStart"
+                                           required/>
+                                </div>
+                            </div>
+                            <br>
+                            <div>
+                                <div id='control' class='left'>
+
+                                    <label class="control-label" for="dtActualEnd">End date</label>
+                                </div>
+                                <div id='control' class='right'>
+
+                                    <input type="date" class="form-control control-height" placeholder="Enter end date"
+                                           id="dtActualEnd" datepicker-popup="{{format}}" ng-model="dtActualEnd"
+                                           required />
+                                </div>
+                            </div>
+                            <br>
+                            <div>
+                                <div id='control' class='left'>
+                                    <label class="control-label" for="dtActualEnd">Actual Effort</label>
+                                </div>
+                                <div id='control' class='right'>
+
+                                    <input type="number" class="form-control control-height" placeholder="Enter actual effort"
+                                           required id="actualEffort" ng-model="actualEffort"/>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div id='control' class='left'>
+                                <label class="control-label" for="dtActualEnd"></label>
+                            </div>
+                            <div id='control' class='right'>
+                            <input class="btn btn-lg btn-success btn-block" type="submit" value="Log Time"
+                                   ng-disabled="formLogTime.$invalid">
+                                </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

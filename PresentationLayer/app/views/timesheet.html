@@ -1,0 +1,18 @@
+<div class="container container-fluid" ng-init="GetProjects()">
+    <div class="row-fluid">
+            <div class="centering text-center">
+                <div class="col-md-4 col-md-offset-4">
+                    <fieldset>
+                        <h1 class="sign-up-title">Project Time Sheet</h1>
+                        <br>
+                        <select class="form-control control-height" placeholder="Select Project" ng-change="GetTimeSheets()"
+                               id="project" ng-model="selectedProject" ng-options="project.ProjectName for project in Projects">
+                            <option default>Select Project</option>
+                        </select>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="gridStyle" ng-grid="gridOptions">
+            </div>
+    </div>
+</div>
