@@ -1,4 +1,4 @@
-packages/
-PresentationLayer/node_modules/
+packages
+PresentationLayer/node_modules
 OrgBT.WebAPI/bin
 OrgBT.WebAPI/obj
