@@ -1,9 +1,9 @@
 AngularJS .NET WebAPI timelogs
 ===============================
 
-#Steps to Execute project.
+##Steps to Execute project.
 
-##Server Side – Web API
+###Server Side – Web API
 
 1. Start Visual Studio 2013 Web Express Edition
 
@@ -13,44 +13,45 @@ AngularJS .NET WebAPI timelogs
 
 4. It should the default web api template page
 
-##Client Side
+###Client Side
 
 1. Type http://localhost:60251/PresentationLayer/app/index.html in the browser address bar.
 
-#Walk through the app
+##Walk through the app
 
-1. You will see login page.
++ You will see login page.
 
 ![Login screen](/screenshots/login.jpg)
 
-2. First we will login as Developer. Enter “Karuna” as username and “Test1234” as password.
++ First we will login as Developer. Enter “Karuna” as username and “Test1234” as password.
 
-3. The app will display developer’s time log entry page, with default to first project, and first task
++ The app will display developer’s time log entry page, with default to first project, and first task
 
 ![Developer Entry page](/screenshots/devlog1.jpg)
-4. Select a project/task 
 
-5. Click on the Start Date text box, the app will pop up bootstrap date picker
++ Select a project/task 
+
++ Click on the Start Date text box, the app will pop up bootstrap date picker.
 
 ![Developer Entry page](/screenshots/devlog2.jpg)
 
-6. Pick start date
++ Pick start date
 
-7. Repeat the 5 and 6 for end date selection
++ Repeat the 5 and 6 for end date selection
 
-8. Enter actual effort and click on Log Time.
++ Enter actual effort and click on Log Time.
 
-9. The app will show a confirmation message. Click on Logout.
++ The app will show a confirmation message. Click on Logout.
 
-10. The app will show a confirmation message and take you to login page.
++ The app will show a confirmation message and take you to login page.
 
-11. Now, as a client login with “Sebastian/Test1234”
++ Now, as a client login with “Sebastian/Test1234”
 
-12. The app will show time sheets page with a filter by projects and the selected project’s time sheet.
++ The app will show time sheets page with a filter by projects and the selected project’s time sheet.
 
 ![Developer Entry page](/screenshots/report.jpg)
 
-#E2E Testing - Protractor
+##E2E Testing - Protractor
 
 1. Start Webdriver manager
 
